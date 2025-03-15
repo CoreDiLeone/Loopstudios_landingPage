@@ -1,0 +1,219 @@
+/*STYLES FOR NAVBAR*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    --Josefin-Sans: 'Josefin Sans', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 15px;
+    padding-top: 35px;
+}
+.container-brand, .btn-menu{
+    position: relative;
+    z-index: 100;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    position: absolute;
+    background-color: var(--Black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: var(--White);
+    z-index: 50;
+    
+    padding: 25px;
+
+}
+.show ul{
+    margin-top: 100px ;
+}
+.show ul li{
+    list-style: none;
+    font-family: var(--Josefin-Sans);
+    font-weight: 200;
+    line-height: 2;
+}
+.show ul li a{
+    color: var(--White);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-inline: 15px;
+}
+
+/*STYLES FOR HERO SECTION*/
+
+.hero-section {
+    position: relative; 
+  }
+  
+  .hero-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    background-size: cover;
+  }
+  
+  .main-title {
+    position: absolute; 
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 3rem; 
+    font-weight: 200;
+    line-height: 1.2; 
+    border: 2px solid var(--White);
+    padding: 15px;
+    font-family: var(--Josefin-Sans);
+    z-index: 1; 
+  }
+
+/*STYLES FOR INTERACTIVE SECTION*/
+.interactive-section{
+    box-sizing: border-box;
+    margin: 100px 20px 40px;
+}
+.interactive-section img{
+    width: 100%;
+}
+.interactive-section-info{
+    margin-top: 25px;
+    padding: 15px;
+}
+.interactive-section-info h2{
+    font-family: var(--Josefin-Sans);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.interactive-section-info p{
+    font-family: var(--Josefin-Sans);
+    color: var(--Dark-Gray);
+}
+.img-desktop{
+    display: none;
+}
+.interactive-section-title, .creations-section-title{
+    font-family: var(--Josefin-Sans);
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.creations-section{
+    display: flex;
+    flex-direction: column;
+}
+.container-creations{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-inline: 15px;
+    box-sizing: border-box;
+}
+.container-creations div{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.container-creations div img{
+    width: 100%;
+}
+.creation-title{
+    position: absolute;
+    color: var(--White);
+    z-index: 100;
+    font-family: var(--Josefin-Sans);
+    font-size: 25px;
+    font-weight: 300;
+    bottom: 40px;
+    left: 40px;
+}
+
+/*BUTTON SEE ALL*/
+.see-all{
+    font-family: var(--Josefin-Sans);
+    padding: 20px 40px;
+    margin: 30px auto;
+    background-color: transparent;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.see-all:hover{
+    background-color: var(--Black);
+    color: var(--White);
+
+}
+/*FOOTER SECTION*/
+.footer-section{
+    background-color: var(--Black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container-brand-footer{
+    padding: 40px;
+}
+.footer-section ul li {
+    font-family: var(--Josefin-Sans);
+    list-style: none;
+    
+}
+.footer-section ul li a{
+    color: var(--White);
+    text-decoration: none;
+    line-height: 3;
+}
+.container-icons{
+    margin-top: 30px;
+}
+.container-icons a {
+    padding: 10px;
+    color: var(--Black);
+}
+.footer-section h5{
+    color: var(--Dark-Gray);
+    padding: 20px;
+
+}
+
+.attribution { 
+    font-size: 14px;
+    text-align: center; 
+}
+.attribution p{
+    color: var(--Dark-Gray);
+    font-family: var(--Josefin-Sans);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
