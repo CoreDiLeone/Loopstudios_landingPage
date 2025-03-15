@@ -5,10 +5,10 @@ const handlerMenu = ()=>{
     menuMobile.classList.toggle('show');
     if (imageIcon.src.includes('icon-hamburger.svg')) {
         // Cambiar el ícono a icon-close.svg
-        imageIcon.src = '/images/icon-close.svg';
+        imageIcon.src = 'images/icon-close.svg';
     } else {
         // Cambiar el ícono a icon-hamburger.svg
-        imageIcon.src = '/images/icon-hamburger.svg';
+        imageIcon.src = 'images/icon-hamburger.svg';
     }
 }
 
