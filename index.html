@@ -16,12 +16,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header scrolled" id="scrolled-nav">
     <div class="container-brand">
       <a href="#"><img src="images/logo.svg" alt="loopstudios-icon"></a>
     </div>
 
-    <nav class="hidden" id="navbar">
+    <nav class="hidden nav-desktop" id="navbar">
       <ul>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CARRERS</a></li>
@@ -41,13 +41,14 @@
     
     
     <section class="hero-section">
-      <img src="images/mobile/image-hero.jpg" alt="">
+      <img src="images/mobile/image-hero.jpg" alt="hero-section-image" class="hero-image img-mobile" id="img-mobile-scrolled">
+      <img src="images/desktop/image-hero.jpg" alt="hero-section-image" class="hero-image img-desktop" id="img-desktop-scrolled">
       <h1 class="main-title"> IMMERSIVE <br> EXPERIENCES <br> THAT <br> DELIVER </h1>
     </section>
 
    <section class="interactive-section">
-    <img src="images/mobile/image-interactive.jpg" alt="person with VR glasses">
-    <div class="interactive-section-info">
+    <img src="images/mobile/image-interactive.jpg" alt="person with VR glasses" class="img-vr-glasses">
+    <div class="interactive-section-info interactive-section-desktop">
       <h2 class="interactive-section-title"> THE LEADER IN INTERACTIVE VR</h2>
       <p>
       Founded in 2011, Loopstudios has been producing world-class virtual reality 
@@ -59,51 +60,54 @@
    </section>
 
    <section class="creations-section">
+    <div>
     <h3 class="creations-section-title">OUR CREATIONS</h3>
+    <button type="button" class="see-all btn-desktop">SEE ALL</button>
+    </div>
     <div class="container-creations">
       <div>
         <h4 class="creation-title">DEEP EARTH</h4>
-        <img src="images/desktop/image-deep-earth.jpg" class="img-desktop"alt="image-deep-earth">
+        <img src="images/desktop/image-deep-earth.jpg" class="img-desktop grid-item"alt="image-deep-earth">
         <img src="images/mobile/image-deep-earth.jpg" class="img-mobile" alt="image-deep-earth">
       </div>
       <div>
         <h4 class="creation-title">NIGHT ARCADE</h4>
-        <img src="images/desktop/image-night-arcade.jpg" class="img-desktop"alt="image-night-arcade">
+        <img src="images/desktop/image-night-arcade.jpg" class="img-desktop grid-item"alt="image-night-arcade">
         <img src="images/mobile/image-night-arcade.jpg" class="img-mobile" alt="image-night-arcade">
       </div>
       <div>
         <h4 class="creation-title">SOCCER TEAM VR</h4>
-        <img src="images/desktop/image-soccer-team.jpg" class="img-desktop"alt="image-soccer-team">
+        <img src="images/desktop/image-soccer-team.jpg" class="img-desktop grid-item"alt="image-soccer-team">
         <img src="images/mobile/image-soccer-team.jpg" class="img-mobile" alt="image-soccer-team">
       </div>
       <div>
         <h4 class="creation-title">THE GRID</h4>
-        <img src="images/desktop/image-grid.jpg" class="img-desktop"alt="image-grid">
+        <img src="images/desktop/image-grid.jpg" class="img-desktop grid-item"alt="image-grid">
         <img src="images/mobile/image-grid.jpg" class="img-mobile" alt="image-grid">
       </div>
       <div>
         <h4 class="creation-title">FROM UP ABOVE VR</h4>
-        <img src="images/desktop/image-from-above.jpg" class="img-desktop" alt="image-from-above">
+        <img src="images/desktop/image-from-above.jpg" class="img-desktop grid-item" alt="image-from-above">
         <img src="images/mobile/image-from-above.jpg" class="img-mobile" alt="image-from-above">
       </div>
       <div>
         <h4 class="creation-title">POCKET BOREALS</h4>
-        <img src="images/desktop/image-pocket-borealis.jpg" class="img-desktop" alt="image-pocket-borealis">
+        <img src="images/desktop/image-pocket-borealis.jpg" class="img-desktop grid-item" alt="image-pocket-borealis">
         <img src="images/mobile/image-pocket-borealis.jpg" class="img-mobile" alt="image-pocket-borealis">
       </div>
       <div>
         <h4 class="creation-title">THE CURIOSITY</h4>
-        <img src="images/desktop/image-curiosity.jpg" class="img-desktop"alt="image-curiosity">
+        <img src="images/desktop/image-curiosity.jpg" class="img-desktop grid-item"alt="image-curiosity">
         <img src="images/mobile/image-curiosity.jpg" class="img-mobile" alt="image-curiosity">
       </div>
       <div>
         <h4 class="creation-title"> MAKE IT FISHEYE</h4>
-        <img src="images/desktop/image-fisheye.jpg" class="img-desktop"alt="image-fisheye">
+        <img src="images/desktop/image-fisheye.jpg" class="img-desktop grid-item"alt="image-fisheye">
         <img src="images/mobile/image-fisheye.jpg" class="img-mobile" alt="image-fisheye">
       </div>
      
     </div>
-    <button type="button" class="see-all">SEE ALL</button>
+    <button type="button" class="see-all btn-mobile">SEE ALL</button>
    </section>
   </main>
 
