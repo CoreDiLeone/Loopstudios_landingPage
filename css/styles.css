@@ -259,6 +259,48 @@ margin-bottom: 45px;
 p{
   font-family: var(--Josefin-Sans);
 }
+
+@media screen and (min-width: 800px) {
+  .show{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    padding-top: 50px;
+  }
+  .creations-section{
+    margin: 20px 120px 20px;
+  }
+  .interactive-section{
+    margin: 120px 120px 20px;
+  }
+  .btn-mobile{
+    display: none;
+  }
+  .btn-desktop{
+    display: block;
+  }
+  .creations-section  > div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 0px 80px;
+  }
+  .creations-section{
+    box-sizing: border-box;
+  }
+  .see-all, .creations-section-title {
+    margin: 0px;
+  }
+  .container-creations{
+    margin: 0px;
+  }
+  .main-title{
+    max-width: 380px;
+    padding: 35px;
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .img-desktop {
     display: block;
@@ -272,12 +314,12 @@ p{
     display: none;
   }
   .main-title {
-    font-size: 3.5em;
+    font-size: 3.6rem;
     margin-left: 20%;
-    padding: 40px;
-    padding-right: 60px ;
+    padding: 45px;
+    padding-right: 80px;
     letter-spacing: 5px;
-    word-wrap: break-word; 
+    word-wrap: break-word;
     max-width: 500px;
   }
   .container-creations {
@@ -349,46 +391,5 @@ p{
   }
   .hero-section{
     justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 800px) {
-  .show{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px;
-    padding-top: 50px;
-  }
-  .creations-section{
-    margin: 20px 120px 20px;
-  }
-  .interactive-section{
-    margin: 120px 120px 20px;
-  }
-  .btn-mobile{
-    display: none;
-  }
-  .btn-desktop{
-    display: block;
-  }
-  .creations-section  > div:first-child{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 120px 0px 80px;
-  }
-  .creations-section{
-    box-sizing: border-box;
-  }
-  .see-all, .creations-section-title {
-    margin: 0px;
-  }
-  .container-creations{
-    margin: 0px;
-  }
-  .main-title{
-    max-width: 380px;
-    padding: 35px;
-    font-size: 3rem;
   }
 }
